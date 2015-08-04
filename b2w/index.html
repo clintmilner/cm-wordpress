@@ -8,7 +8,7 @@
     <meta name="author" content="Clint Milner">
     <link rel="icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,700|Lato' rel='stylesheet' type='text/css'></head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700,300|Lato:300,400,700' rel='stylesheet' type='text/css'>
 <body>
     <!-- ========= HEADER ========== -->
     <header class="site-header" role="banner">
@@ -75,8 +75,20 @@
     </section>
 
     <!-- ========== OPT IN ========== -->
-    <section>
-
+    <section id="optin">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <p class="lead">
+                        <strong>Subscribe to our mailing list.</strong>
+                        We'll send something special as a 'Thank You'
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#subModal">Click Here to Subscribe</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- ========== BOOST YOUR INCOME ========== -->
@@ -125,8 +137,37 @@
     </footer>
 
     <!-- ========== MODAL ========== -->
-    <div>
+    <div class="modal fade" id="subModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="subModalLabel"><i class="fa fa-envelope-o"></i> Subscribe to our Mailing List</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Simply enter your name and email! As a thank you for joining us, we're going to give you one of our best-selling courses, <em>for free!</em></p>
 
+                    <form class="form-inline" role="form">
+                        <div class="form-group">
+                            <label class="sr-only" for="subscribe-name">Your first name</label>
+                            <input type="text" class="form-control" id="subscribe-name" placeholder="Your first name">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="subscribe-email">and your email</label>
+                            <input type="text" class="form-control" id="subscribe-email" placeholder="and your email">
+                        </div>
+                        <input type="submit" class="btn btn-danger" value="Subscribe!">
+                    </form>
+
+                    <hr>
+
+                    <p><small>By providing your email you consent to receiving occasional promotional emails &amp; newsletters. <br>No Spam. Just good stuff. We respect your privacy &amp; you may unsubscribe at any time.</small></p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

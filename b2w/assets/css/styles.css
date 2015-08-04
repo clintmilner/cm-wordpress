@@ -8723,6 +8723,7 @@ button.close {
 body {
   margin-top: 50px;
   font-family: 'Lato', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   background: url('../img/tile.jpg') top left repeat;
   -webkit-font-smoothing: antialiased;
@@ -8760,6 +8761,17 @@ body h3 {
 body h4 {
   font-size: 16px;
   font-weight: 300;
+}
+body img {
+  max-width: 100%;
+}
+body button,
+body input,
+body .btn,
+body a.btn {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  color: #fff;
 }
 body .btn {
   font-family: 'Roboto Slab', serif;
@@ -8819,4 +8831,16 @@ body #hero .price-timeline h4 {
 body #hero .price-timeline h4 small {
   color: #fff;
   display: block;
+}
+body #optin {
+  background: #3e4249;
+  padding: 20px 0;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-size: 1.2em;
+}
+body #optin p {
+  margin: 10px 0 0 0;
+  font-weight: 300;
 }

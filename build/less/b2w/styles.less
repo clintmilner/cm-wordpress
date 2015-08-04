@@ -19,6 +19,7 @@
 body {
     margin-top: 50px;
     font-family: @sans;
+    font-weight: 400;
     font-size: 16px;
     background: url( '../img/tile.jpg' ) top left repeat;
 
@@ -46,6 +47,15 @@ body {
     h4 {
         font-size: 16px;
         font-weight: 300;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    button, input, .btn, a.btn {
+        .sexytext();
+        color: #fff;
     }
 
     .btn {
@@ -117,6 +127,20 @@ body {
                     display: block;
                 }
             }
+        }
+    }
+
+    // LAYOUT
+    #optin {
+        background: @bluegray;
+        padding: 20px 0;
+        color: #fff;
+        .sexytext();
+        font-size: 1.2em;
+
+        p {
+            margin: 10px 0 0 0;
+            font-weight: 300;
         }
     }
 
