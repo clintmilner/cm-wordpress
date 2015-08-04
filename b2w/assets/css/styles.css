@@ -8816,6 +8816,27 @@ body i.ci.ci-instructor {
 body i.ci.ci-device {
   background-position: -200px 0;
 }
+body .modal-content {
+  background: url('../img/tile.jpg') 0 0 repeat;
+}
+body .badge.social {
+  background: #ccc;
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  line-height: 35px;
+  text-align: center;
+  margin: 0 5px 20px 0;
+  color: #fff;
+  float: right;
+  border-radius: 100%;
+}
+body .badge.social.twitter:hover {
+  background: #55acee;
+}
+body .badge.social.facebook:hover {
+  background: #3b5998;
+}
 body #hero {
   background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
   min-height: 500px;
@@ -8896,4 +8917,33 @@ body #featurette {
   background-size: cover;
   text-align: center;
   color: #fff;
+}
+body #instructor {
+  background: #ffffff url('../img/brad-elvis.png') 90% -10px no-repeat;
+}
+body #instructor h2 {
+  margin: 0 0 20px;
+}
+body #instructor .num {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 24px;
+  height: 140px;
+  width: 140px;
+  text-align: center;
+  background: #dd5638;
+  border-radius: 100%;
+  display: table;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+body #instructor .num .num-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+body #instructor .num span {
+  display: block;
+  font-size: smaller;
+  font-weight: 300;
 }
