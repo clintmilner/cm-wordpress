@@ -8773,12 +8773,48 @@ body a.btn {
   text-rendering: optimizelegibility;
   color: #fff;
 }
+body section {
+  padding: 80px 0;
+}
+body section .section-header {
+  text-align: center;
+}
+body section h2 {
+  margin: 20px 0 40px;
+}
+body section h3 {
+  margin: 30px 0 10px;
+}
 body .btn {
   font-family: 'Roboto Slab', serif;
 }
 body .btn .btn-danger {
   background: #dd5638;
   border-color: #da4727;
+}
+body i.ci {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background: url('../img/icon-sprite.png') no-repeat;
+}
+body i.ci.ci-computer {
+  background-position: 0 0;
+}
+body i.ci.ci-watch {
+  background-position: -40px 0;
+}
+body i.ci.ci-calendar {
+  background-position: -80px 0;
+}
+body i.ci.ci-community {
+  background-position: -120px 0;
+}
+body i.ci.ci-instructor {
+  background-position: -160px 0;
+}
+body i.ci.ci-device {
+  background-position: -200px 0;
 }
 body #hero {
   background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
@@ -8843,4 +8879,12 @@ body #optin {
 body #optin p {
   margin: 10px 0 0 0;
   font-weight: 300;
+}
+body #who-benefits {
+  background: #fff;
+}
+body #course-features {
+  background: #3e4249;
+  text-align: center;
+  color: #fff;
 }

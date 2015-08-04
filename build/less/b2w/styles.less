@@ -58,12 +58,44 @@ body {
         color: #fff;
     }
 
+    section {
+        padding: 80px 0;
+
+        .section-header {
+            text-align: center;
+        }
+
+        h2 {
+            margin: 20px 0 40px;
+        }
+
+        h3 {
+            margin: 30px 0 10px;
+        }
+    }
+
     .btn {
         font-family: @serif;
 
         .btn-danger {
             background: @salmon;
             border-color: darken(@salmon, 4%);
+        }
+    }
+
+    i.ci {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background: url( '../img/icon-sprite.png' ) no-repeat;
+
+        &.ci {
+            &-computer { background-position: 0 0; }
+            &-watch { background-position: -40px 0; }
+            &-calendar { background-position: -80px 0; }
+            &-community { background-position: -120px 0; }
+            &-instructor { background-position: -160px 0; }
+            &-device { background-position: -200px 0; }
         }
     }
 
@@ -142,6 +174,17 @@ body {
             margin: 10px 0 0 0;
             font-weight: 300;
         }
+    }
+
+    #who-benefits {
+        background: #fff;
+    }
+
+    #course-features {
+        background: @bluegray;
+        text-align: center;
+        color: #fff;
+
     }
 
 }
