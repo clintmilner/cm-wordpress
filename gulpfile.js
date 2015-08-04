@@ -25,7 +25,7 @@ gulp.task('build-less', function(){
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(minifyCss( { keepBreaks: true } ))
+        //.pipe(minifyCss( { keepBreaks: true } ))
         .pipe(gulp.dest( cssTarget ));
 
     console.log( 'Finished compiling LESS files to ' + cssTarget );
