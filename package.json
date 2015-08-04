@@ -1,0 +1,19 @@
+{
+  "name": "cm-wordpress",
+  "version": "1.0.0",
+  "description": "Custom Bootstrap Wordpress site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clintmilner/cm-wordpress.git"
+  },
+  "author": "Clint Milner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clintmilner/cm-wordpress/issues"
+  },
+  "homepage": "https://github.com/clintmilner/cm-wordpress"
+}
