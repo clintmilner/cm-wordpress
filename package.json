@@ -2,10 +2,6 @@
   "name": "cm-wordpress",
   "version": "1.0.0",
   "description": "Custom Bootstrap Wordpress site",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/clintmilner/cm-wordpress.git"
@@ -15,5 +11,12 @@
   "bugs": {
     "url": "https://github.com/clintmilner/cm-wordpress/issues"
   },
-  "homepage": "https://github.com/clintmilner/cm-wordpress"
+  "homepage": "https://github.com/clintmilner/cm-wordpress",
+  "devDependencies": {
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "^3.0.3",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-uglify": "^1.2.0"
+  }
 }
