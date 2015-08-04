@@ -8891,3 +8891,9 @@ body #course-features {
 body #project-features {
   text-align: center;
 }
+body #featurette {
+  background: url('../img/stuff-bg.jpg') 50% 100% repeat fixed;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
