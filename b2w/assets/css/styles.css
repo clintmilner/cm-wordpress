@@ -8762,6 +8762,12 @@ body h4 {
   font-size: 16px;
   font-weight: 300;
 }
+body p {
+  margin: 0 0 15px;
+}
+body p.lead {
+  font-weight: 400;
+}
 body a:link,
 body a:visited {
   color: #dd5638;
@@ -8848,6 +8854,9 @@ body i.ci.ci-device {
 body .modal-content {
   background: url('../img/tile.jpg') 0 0 repeat;
 }
+body .row + .row {
+  margin-top: 20px;
+}
 body .badge.social {
   background: #ccc;
   font-size: 24px;
@@ -8877,6 +8886,11 @@ body #hero {
 body #hero article {
   width: 100%;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  body #hero .logo {
+    width: 50%;
+  }
 }
 body #hero .hero-text {
   margin-top: 30px;
@@ -8930,6 +8944,12 @@ body #optin p {
   margin: 10px 0 0 0;
   font-weight: 300;
 }
+@media screen and (max-width: 768px) {
+  body #optin p {
+    margin: 0 0 10px;
+    text-align: center;
+  }
+}
 body #who-benefits {
   background: #fff;
 }
@@ -8946,6 +8966,11 @@ body #featurette {
   background-size: cover;
   text-align: center;
   color: #fff;
+}
+@media screen and (max-width: 768px) {
+  body #featurette iframe {
+    height: 240px;
+  }
 }
 body #instructor {
   background: #ffffff url('../img/brad-elvis.png') 90% -10px no-repeat;
@@ -8975,6 +9000,24 @@ body #instructor .num span {
   display: block;
   font-size: smaller;
   font-weight: 300;
+}
+@media screen and (max-width: 568px) {
+  body #instructor .num span {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 568px) {
+  body #instructor .num {
+    height: 100px;
+    width: 100px;
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 991px) {
+  body #instructor .container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+  }
 }
 body #kudos {
   text-align: center;

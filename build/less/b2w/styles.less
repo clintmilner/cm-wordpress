@@ -48,6 +48,13 @@ body {
         font-size: 16px;
         font-weight: 300;
     }
+    p {
+        margin: 0 0 15px;
+
+        &.lead {
+            font-weight: 400;
+        }
+    }
 
     a:link, a:visited {
         color: @salmon;
@@ -137,6 +144,10 @@ body {
         background: url( '../img/tile.jpg' ) 0 0 repeat;
     }
 
+    .row + .row {
+        margin-top: 20px;
+    }
+
     .badge {
         &.social {
             background: #ccc;
@@ -175,6 +186,12 @@ body {
         article {
             width: 100%;
             text-align: center;
+        }
+
+        .logo {
+            @media screen and ( max-width: 768px ) {
+                width: 50%;
+            }
         }
 
         .hero-text {
@@ -238,6 +255,11 @@ body {
         p {
             margin: 10px 0 0 0;
             font-weight: 300;
+
+            @media screen and ( max-width: 768px ) {
+                margin: 0 0 10px;
+                text-align: center;
+            }
         }
     }
 
@@ -262,6 +284,12 @@ body {
         background-size: cover;
         text-align: center;
         color: #fff;
+
+        iframe {
+            @media screen and ( max-width: 768px ) {
+                height: 240px;
+            }
+        }
     }
 
     #instructor {
@@ -295,8 +323,24 @@ body {
                 display: block;
                 font-size: smaller;
                 font-weight: 300;
+                @media screen and ( max-width: 568px ) {
+                    font-size: 16px;
+                }
             }
 
+            @media screen and ( max-width: 568px ) {
+                height: 100px;
+                width: 100px;
+                font-size: 22px;
+            }
+
+        }
+
+        .container {
+            @media screen and ( max-width: 991px ) {
+                background: rgba(255,255,255,0.8);
+                padding: 20px;
+            }
         }
     }
 
