@@ -8970,3 +8970,20 @@ body #kudos .testimonial {
 body #kudos .testimonial img {
   border-radius: 50%;
 }
+body #signup {
+  text-align: center;
+  background: url('../img/hipster-stuff.jpg') center center repeat fixed;
+  background-size: cover;
+  color: #fff;
+  padding: 140px 0;
+}
+body #signup h2 {
+  font-weight: 300;
+  font-size: 28px;
+}
+body #signup h2 strong {
+  border-bottom: 2px solid #dd5638;
+}
+body #signup .btn {
+  font-size: 24px;
+}

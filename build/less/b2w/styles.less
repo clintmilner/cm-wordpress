@@ -98,6 +98,15 @@ body {
             background: @salmon;
             border-color: darken(@salmon, 4%);
         }
+
+        .btn-success {
+            background: @green;
+            border: none;
+
+            &:hover {
+                background: darken(@green, 4%);
+            }
+        }
     }
 
     i.ci {
@@ -296,5 +305,26 @@ body {
             }
         }
 
+    }
+
+    #signup {
+        text-align: center;
+        background: url( '../img/hipster-stuff.jpg' ) center bottom repeat fixed;
+        background-size: cover;
+        color: #fff;
+        padding: 140px 0;
+
+        h2 {
+            font-weight: 300;
+            font-size: 28px;
+
+            strong {
+                border-bottom: 2px solid @salmon;
+            }
+        }
+
+        .btn {
+            font-size: 24px;
+        }
     }
 }
