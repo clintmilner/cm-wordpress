@@ -9107,7 +9107,11 @@ body footer a:hover {
   color: #dd5638;
 }
 body.blog .post,
-body.blog .widget {
+body.single .post,
+body.blog .widget,
+body.single .widget,
+body.blog #comments,
+body.single #comments {
   position: relative;
   border: 1px solid #ddd;
   background: #fff;
@@ -9115,42 +9119,88 @@ body.blog .widget {
   border-radius: 4px;
 }
 body.blog .post header,
+body.single .post header,
 body.blog .widget header,
+body.single .widget header,
+body.blog #comments header,
+body.single #comments header,
 body.blog .post .post-excerpt,
-body.blog .widget .post-excerpt {
+body.single .post .post-excerpt,
+body.blog .widget .post-excerpt,
+body.single .widget .post-excerpt,
+body.blog #comments .post-excerpt,
+body.single #comments .post-excerpt,
+body.blog .post .post-body,
+body.single .post .post-body,
+body.blog .widget .post-body,
+body.single .widget .post-body,
+body.blog #comments .post-body,
+body.single #comments .post-body {
   padding: 20px;
 }
 body.blog .post header h1,
+body.single .post header h1,
 body.blog .widget header h1,
+body.single .widget header h1,
+body.blog #comments header h1,
+body.single #comments header h1,
 body.blog .post header h3,
-body.blog .widget header h3 {
+body.single .post header h3,
+body.blog .widget header h3,
+body.single .widget header h3,
+body.blog #comments header h3,
+body.single #comments header h3 {
   margin: 0 0 15px;
   padding: 0 0 15px;
   border-bottom: 1px solid #ddd;
 }
 body.blog .post header h1,
-body.blog .widget header h1 {
+body.single .post header h1,
+body.blog .widget header h1,
+body.single .widget header h1,
+body.blog #comments header h1,
+body.single #comments header h1 {
   font-size: 24px;
 }
 body.blog .post .post-image,
-body.blog .widget .post-image {
+body.single .post .post-image,
+body.blog .widget .post-image,
+body.single .widget .post-image,
+body.blog #comments .post-image,
+body.single #comments .post-image {
   height: auto;
 }
 body.blog .post .post-details,
-body.blog .widget .post-details {
+body.single .post .post-details,
+body.blog .widget .post-details,
+body.single .widget .post-details,
+body.blog #comments .post-details,
+body.single #comments .post-details {
   font-size: small;
   width: 90%;
 }
 body.blog .post .post-details i.fa,
-body.blog .widget .post-details i.fa {
+body.single .post .post-details i.fa,
+body.blog .widget .post-details i.fa,
+body.single .widget .post-details i.fa,
+body.blog #comments .post-details i.fa,
+body.single #comments .post-details i.fa {
   padding-left: 10px;
 }
 body.blog .post .post-details i.fa:first-child,
-body.blog .widget .post-details i.fa:first-child {
+body.single .post .post-details i.fa:first-child,
+body.blog .widget .post-details i.fa:first-child,
+body.single .widget .post-details i.fa:first-child,
+body.blog #comments .post-details i.fa:first-child,
+body.single #comments .post-details i.fa:first-child {
   padding: 0;
 }
 body.blog .post .post-details .post-comments-badge,
-body.blog .widget .post-details .post-comments-badge {
+body.single .post .post-details .post-comments-badge,
+body.blog .widget .post-details .post-comments-badge,
+body.single .widget .post-details .post-comments-badge,
+body.blog #comments .post-details .post-comments-badge,
+body.single #comments .post-details .post-comments-badge {
   height: 70px;
   width: 70px;
   position: absolute;
@@ -9163,41 +9213,89 @@ body.blog .widget .post-details .post-comments-badge {
   display: table;
 }
 body.blog .post .post-details .post-comments-badge:hover,
-body.blog .widget .post-details .post-comments-badge:hover {
+body.single .post .post-details .post-comments-badge:hover,
+body.blog .widget .post-details .post-comments-badge:hover,
+body.single .widget .post-details .post-comments-badge:hover,
+body.blog #comments .post-details .post-comments-badge:hover,
+body.single #comments .post-details .post-comments-badge:hover {
   background: #83bb4e;
 }
 body.blog .post .post-details .post-comments-badge i.fa,
-body.blog .widget .post-details .post-comments-badge i.fa {
+body.single .post .post-details .post-comments-badge i.fa,
+body.blog .widget .post-details .post-comments-badge i.fa,
+body.single .widget .post-details .post-comments-badge i.fa,
+body.blog #comments .post-details .post-comments-badge i.fa,
+body.single #comments .post-details .post-comments-badge i.fa {
   display: block;
   font-size: 15px;
   padding: 0;
   margin-bottom: 4px;
 }
 body.blog .post .post-details .post-comments-badge a,
-body.blog .widget .post-details .post-comments-badge a {
+body.single .post .post-details .post-comments-badge a,
+body.blog .widget .post-details .post-comments-badge a,
+body.single .widget .post-details .post-comments-badge a,
+body.blog #comments .post-details .post-comments-badge a,
+body.single #comments .post-details .post-comments-badge a {
   display: table-cell;
   vertical-align: middle;
   color: #fff;
   font-size: 20px;
   line-height: 20px;
 }
-body.blog .widget {
+body.blog .widget,
+body.single .widget {
   padding: 20px;
 }
-body.blog .widget h4 {
+body.blog .widget h4,
+body.single .widget h4 {
   margin: 0 0 10px;
   padding: 0 0 10px;
   border-bottom: 1px solid #ddd;
 }
-body.blog .widget ul {
+body.blog .widget ul,
+body.single .widget ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-body.blog .widget ul li {
+body.blog .widget ul li,
+body.single .widget ul li {
   margin: 0 0 5px;
 }
-body.blog .widget ul li:hover {
+body.blog .widget ul li:hover,
+body.single .widget ul li:hover {
   position: relative;
   left: 1px;
+}
+body.single #comments h3 {
+  text-align: center;
+}
+body.single #comments h4 {
+  font-size: 1.3em;
+}
+body.single #comments .comments-wrap {
+  padding: 20px;
+}
+body.single #comments ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body.single #comments ol li {
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+body.single #comments ol li ol.children {
+  padding: 0;
+  list-style: none;
+  font-size: 0.96em;
+}
+body.single #leave-comment {
+  margin: 40px 0 0;
+  padding: 20px 0 0;
+  border-top: 1px solid #eee;
 }
