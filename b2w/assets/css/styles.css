@@ -8793,6 +8793,9 @@ body section {
 body section .section-header {
   text-align: center;
 }
+body section.main-content {
+  padding: 40px 0;
+}
 body section h2 {
   margin: 20px 0 40px;
 }
@@ -9298,4 +9301,25 @@ body.single #leave-comment {
   margin: 40px 0 0;
   padding: 20px 0 0;
   border-top: 1px solid #eee;
+}
+body .resource {
+  width: 33.33333333%;
+  float: left;
+  margin: 0 0 40px 0;
+  min-height: 800px;
+}
+@media screen and (max-width: 768px) {
+  body .resource {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 568px) {
+  body .resource {
+    width: 100%;
+    margin-right: 0;
+    min-height: 0;
+  }
+}
+body .resource:nth-child(3n) {
+  margin-right: 0;
 }
