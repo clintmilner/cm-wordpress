@@ -74,6 +74,23 @@ body {
         }
     }
 
+    blockquote {
+        padding: 0;
+        border: none;
+        font-style: italic;
+        text-align: left;
+
+        cite {
+            display: block;
+            color: #777;
+            margin: 15px 0 0 0;
+        }
+
+        &:before {
+            display: none;
+        }
+    }
+
     .btn {
         font-family: @serif;
 
@@ -264,5 +281,20 @@ body {
             }
 
         }
+    }
+
+    #kudos {
+        text-align: center;
+
+        .testimonial {
+            margin-bottom: 60px;
+
+            img {
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+            }
+        }
+
     }
 }

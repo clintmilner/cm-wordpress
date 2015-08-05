@@ -8785,6 +8785,20 @@ body section h2 {
 body section h3 {
   margin: 30px 0 10px;
 }
+body blockquote {
+  padding: 0;
+  border: none;
+  font-style: italic;
+  text-align: left;
+}
+body blockquote cite {
+  display: block;
+  color: #777;
+  margin: 15px 0 0 0;
+}
+body blockquote:before {
+  display: none;
+}
 body .btn {
   font-family: 'Roboto Slab', serif;
 }
@@ -8946,4 +8960,13 @@ body #instructor .num span {
   display: block;
   font-size: smaller;
   font-weight: 300;
+}
+body #kudos {
+  text-align: center;
+}
+body #kudos .testimonial {
+  margin-bottom: 60px;
+}
+body #kudos .testimonial img {
+  border-radius: 50%;
 }
