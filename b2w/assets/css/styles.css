@@ -8762,6 +8762,14 @@ body h4 {
   font-size: 16px;
   font-weight: 300;
 }
+body a:link,
+body a:visited {
+  color: #dd5638;
+}
+body a:hover {
+  text-decoration: none;
+  color: #c9302c;
+}
 body img {
   max-width: 100%;
 }
@@ -8805,6 +8813,13 @@ body .btn {
 body .btn .btn-danger {
   background: #dd5638;
   border-color: #da4727;
+}
+body .btn .btn-success {
+  background: #79b044;
+  border: none;
+}
+body .btn .btn-success:hover {
+  background: #6fa13e;
 }
 body i.ci {
   display: inline-block;
@@ -8972,7 +8987,7 @@ body #kudos .testimonial img {
 }
 body #signup {
   text-align: center;
-  background: url('../img/hipster-stuff.jpg') center center repeat fixed;
+  background: url('../img/hipster-stuff.jpg') center bottom repeat fixed;
   background-size: cover;
   color: #fff;
   padding: 140px 0;
@@ -8986,4 +9001,26 @@ body #signup h2 strong {
 }
 body #signup .btn {
   font-size: 24px;
+}
+body footer {
+  background: #3e4249;
+  color: #fff;
+  padding: 20px 0 10px;
+  font-size: 13px;
+}
+body footer li.signup-link a {
+  color: #dd5638;
+}
+body footer li.signup-link a:hover {
+  font-weight: 700;
+}
+body footer p {
+  margin: 0;
+}
+body footer a:link,
+body footer a:visited {
+  color: #fff;
+}
+body footer a:hover {
+  color: #dd5638;
 }

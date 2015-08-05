@@ -49,6 +49,14 @@ body {
         font-weight: 300;
     }
 
+    a:link, a:visited {
+        color: @salmon;
+    }
+    a:hover {
+        text-decoration: none;
+        color: #c9302c;
+    }
+
     img {
         max-width: 100%;
     }
@@ -325,6 +333,35 @@ body {
 
         .btn {
             font-size: 24px;
+        }
+    }
+
+    footer {
+        background: @bluegray;
+        color: #fff;
+        padding: 20px 0 10px;
+        font-size: 13px;
+
+        li {
+            &.signup-link {
+                a {
+                    color: @salmon;
+                    &:hover {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        p {
+            margin: 0;
+        }
+
+        a:link, a:visited {
+            color: #fff;
+        }
+        a:hover {
+            color: @salmon;
         }
     }
 }
