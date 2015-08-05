@@ -3,6 +3,13 @@
     Template Name: Home Page
  */
 
+// Custom Field variables
+$prelaunch_price    =   get_post_meta( 7, 'prelaunch_price', true );
+$launch_price    =   get_post_meta( 7, 'launch_price', true );
+$final_price    =   get_post_meta( 7, 'final_price', true );
+$course_url    =   get_post_meta( 7, 'course_url', true );
+$button_text    =   get_post_meta( 7, 'button_text', true );
+
 get_header(); ?>
 
 <!-- ========== HERO ========== -->
@@ -14,33 +21,32 @@ get_header(); ?>
                     <img src="<?php bloginfo( 'template_directory'); ?>/assets/img/logo-badge.png" alt="B2W Logo" class="logo"/>
                 </div>
                 <div class="col-sm-7 hero-text">
-                    <h1>Bootstrap to WordPress</h1>
+                    <h1><?php bloginfo( 'name' ); ?></h1>
 
-                    <p class="lead">Earn An Extra $1k - $5k a Month by Learning to Code your very own Responsive &amp;
-                        Custom WordPress Website with Bootstrap</p>
+                    <p class="lead"><?php bloginfo( 'description' ); ?></p>
 
                     <div class="price-timeline">
                         <div class="price active">
                             <h4>Pre-Launch Price
                                 <small>Ends Soon!</small>
                             </h4>
-                            <span>$149</span>
+                            <span><?php echo $prelaunch_price; ?></span>
                         </div>
                         <div class="price ">
                             <h4>Launch Price
                                 <small>Coming Soon!</small>
                             </h4>
-                            <span>$250</span>
+                            <span><?php echo $launch_price; ?></span>
                         </div>
                         <div class="price">
                             <h4>Final Price
                                 <small>Coming Soon!</small>
                             </h4>
-                            <span>$311</span>
+                            <span><?php echo $final_price; ?></span>
                         </div>
                     </div>
 
-                    <p><a class="btn btn-lg btn-danger" href="/" role="button">Enroll &raquo;</a></p>
+                    <p><a class="btn btn-lg btn-danger" href="<?php echo $course_url; ?>" role="button"><?php echo $button_text; ?></a></p>
                 </div>
             </div>
         </div>
