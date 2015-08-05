@@ -8851,6 +8851,24 @@ body i.ci.ci-instructor {
 body i.ci.ci-device {
   background-position: -200px 0;
 }
+body label {
+  display: block;
+  font-weight: 700;
+}
+body input[type="text"],
+body input[type="email"],
+body input[type="url"],
+body input[type="password"],
+body input[type="search"],
+body textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px 12px;
+}
 body .modal-content {
   background: url('../img/tile.jpg') 0 0 repeat;
 }
@@ -8874,6 +8892,27 @@ body .badge.social.twitter:hover {
 }
 body .badge.social.facebook:hover {
   background: #3b5998;
+}
+body .feature-image {
+  display: table;
+  width: 100%;
+}
+body .feature-image-default {
+  background: url('../img/stuff-feature.jpg') no-repeat;
+  background-size: cover;
+}
+body .feature-image-default-alt {
+  background: url('../img/hipster-stuff.jpg') no-repeat;
+  background-size: cover;
+}
+body .feature-image h1 {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+  text-align: center;
+}
+body #primary {
+  padding: 40px 0;
 }
 body #hero {
   background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
@@ -9066,4 +9105,99 @@ body footer a:visited {
 }
 body footer a:hover {
   color: #dd5638;
+}
+body.blog .post,
+body.blog .widget {
+  position: relative;
+  border: 1px solid #ddd;
+  background: #fff;
+  margin: 0 0 40px;
+  border-radius: 4px;
+}
+body.blog .post header,
+body.blog .widget header,
+body.blog .post .post-excerpt,
+body.blog .widget .post-excerpt {
+  padding: 20px;
+}
+body.blog .post header h1,
+body.blog .widget header h1,
+body.blog .post header h3,
+body.blog .widget header h3 {
+  margin: 0 0 15px;
+  padding: 0 0 15px;
+  border-bottom: 1px solid #ddd;
+}
+body.blog .post header h1,
+body.blog .widget header h1 {
+  font-size: 24px;
+}
+body.blog .post .post-image,
+body.blog .widget .post-image {
+  height: auto;
+}
+body.blog .post .post-details,
+body.blog .widget .post-details {
+  font-size: small;
+  width: 90%;
+}
+body.blog .post .post-details i.fa,
+body.blog .widget .post-details i.fa {
+  padding-left: 10px;
+}
+body.blog .post .post-details i.fa:first-child,
+body.blog .widget .post-details i.fa:first-child {
+  padding: 0;
+}
+body.blog .post .post-details .post-comments-badge,
+body.blog .widget .post-details .post-comments-badge {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  border: none;
+  border-radius: 100%;
+  background: #79b044;
+  text-align: center;
+  display: table;
+}
+body.blog .post .post-details .post-comments-badge:hover,
+body.blog .widget .post-details .post-comments-badge:hover {
+  background: #83bb4e;
+}
+body.blog .post .post-details .post-comments-badge i.fa,
+body.blog .widget .post-details .post-comments-badge i.fa {
+  display: block;
+  font-size: 15px;
+  padding: 0;
+  margin-bottom: 4px;
+}
+body.blog .post .post-details .post-comments-badge a,
+body.blog .widget .post-details .post-comments-badge a {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+}
+body.blog .widget {
+  padding: 20px;
+}
+body.blog .widget h4 {
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  border-bottom: 1px solid #ddd;
+}
+body.blog .widget ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body.blog .widget ul li {
+  margin: 0 0 5px;
+}
+body.blog .widget ul li:hover {
+  position: relative;
+  left: 1px;
 }
