@@ -9227,7 +9227,7 @@ body.single .widget .post-details .post-comments-badge i.fa,
 body.blog #comments .post-details .post-comments-badge i.fa,
 body.single #comments .post-details .post-comments-badge i.fa {
   display: block;
-  font-size: 15px;
+  font-size: 30px;
   padding: 0;
   margin-bottom: 4px;
 }
