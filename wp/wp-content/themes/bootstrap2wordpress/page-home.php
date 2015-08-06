@@ -29,6 +29,16 @@ $features_section_title     =   get_field( 'features_section_title' );
 $project_feature_title    =   get_field( 'project_feature_title' );
 $project_feature_body     =   get_field( 'project_feature_body' );
 
+$instructor_section_title   = get_field( 'instructor_section_title' );
+$instructor_name   = get_field( 'instructor_name' );
+$bio_excerpt   = get_field( 'bio_excerpt' );
+$full_bio  = get_field( 'full_bio' );
+$twitter_username = get_field( 'twitter_username' );
+$facebook_username = get_field( 'facebook_username' );
+$number_of_students = get_field( 'number_of_students' );
+$number_of_reviews = get_field( 'number_of_reviews' );
+$number_of_courses = get_field( 'number_of_courses' );
+
 get_header(); ?>
 
 <!-- ========== HERO ========== -->
@@ -213,35 +223,25 @@ get_header(); ?>
             <div class="col-sm-8 col-md-6">
                 <div class="row">
                     <div class="col-lg-8">
-                        <h2>Instructor
-                            <small>Clint Milner</small>
+                        <h2><?php echo $instructor_section_title; ?>
+                            <small><?php echo $instructor_name; ?></small>
                         </h2>
                     </div>
                     <div class="col-lg-4">
-                        <a href="https://twitter.com/clint_milner" class="badge social twitter" target="_blank"><i
+                        <?php if( !empty($twitter_username) ) : ?>
+                        <a href="https://twitter.com/<?php echo $twitter_username; ?>" class="badge social twitter" target="_blank"><i
                                 class="fa fa-twitter"></i></a>
-                        <a href="https://facebook.com/clint.milner" class="badge social facebook" target="_blank"><i
+                        <?php endif; ?>
+                        <?php if( !empty($facebook_username) ) : ?>
+                        <a href="https://facebook.com/<?php echo $facebook_username; ?>" class="badge social facebook" target="_blank"><i
                                 class="fa fa-facebook"></i></a>
+                        <?php endif; ?>
                         <!--<a href="https://plus.google.com/+ClintHussey" class="badge social gplus" target="_blank"><i class="fa fa-google-plus"></i></a>-->
                     </div>
                 </div>
-                <p class="lead">A highly skilled professional, Clint Milner is a passionate and experienced web
-                    designer, developer, blogger and digital entrepreneur.
+                <p class="lead"><?php echo $bio_excerpt; ?></p>
 
-                <p>
-
-                <p>Hailing from North Of The Wall (Colorado, USA), Clint made the trek to the Wet Coast
-                    (Buckinghamshire, UK) to educate and equip himself with the necessary skills to become a spearhead
-                    in his trade of solving problems on the web, crafting design solutions, and speaking in code.</p>
-
-                <p>Clint's determination and love for what he does has landed him in some pretty interesting places with
-                    some neat people. He's had the privilege of working with, and providing solutions for, numerous
-                    businesses, big &amp; small, across the Americas.</p>
-
-                <p>Clint builds custom websites, and provides design solutions for a wide-array of clientele at his
-                    company, Brightside Studios. He regularly blogs about passive income, living your life to the
-                    fullest, and provides premium quality web design tutorials and courses for tens of thousands of
-                    amazing people desiring to master their craft.</p>
+                <?php echo $full_bio; ?>
 
                 <hr>
                 <h3>The Numbers
@@ -251,7 +251,7 @@ get_header(); ?>
                     <div class="col-xs-4">
                         <div class="num">
                             <div class="num-content">
-                                41,000+ <span>students</span>
+                                <?php echo $number_of_students; ?>+ <span>students</span>
                             </div>
                         </div>
                     </div>
@@ -259,7 +259,7 @@ get_header(); ?>
                     <div class="col-xs-4">
                         <div class="num">
                             <div class="num-content">
-                                568 <span>reviews</span>
+                                <?php echo $number_of_reviews; ?> <span>reviews</span>
                             </div>
                         </div>
                     </div>
@@ -267,7 +267,7 @@ get_header(); ?>
                     <div class="col-xs-4">
                         <div class="num">
                             <div class="num-content">
-                                8 <span>courses</span>
+                                <?php echo $number_of_courses; ?> <span>courses</span>
                             </div>
                         </div>
                     </div>
