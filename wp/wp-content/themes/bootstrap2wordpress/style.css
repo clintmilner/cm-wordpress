@@ -9528,12 +9528,12 @@ body.blog #comments header h1,
 body.single #comments header h1 {
 	font-size: 24px;
 }
-body.blog .post .post-image,
-body.single .post .post-image,
-body.blog .widget .post-image,
-body.single .widget .post-image,
-body.blog #comments .post-image,
-body.single #comments .post-image {
+body.blog .post .post-image img,
+body.single .post .post-image img,
+body.blog .widget .post-image img,
+body.single .widget .post-image img,
+body.blog #comments .post-image img,
+body.single #comments .post-image img {
 	height: auto;
 }
 body.blog .post .post-details,
